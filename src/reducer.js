@@ -10,7 +10,7 @@ const toDoApp = ( state = INITAL_STATE, action ) => {
       return update( state,
          {
             toDos: {
-               $push: action.toTo
+               $push: [ action.toDo ]
             }
          })
    }
