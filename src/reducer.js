@@ -1,7 +1,7 @@
 import update from 'immutability-helper'
 
 const INITAL_STATE = {
-   toDos: [ `test`, `testing` ]
+   toDos: [ ]
 }
 
 const toDoApp = ( state = INITAL_STATE, action ) => {
