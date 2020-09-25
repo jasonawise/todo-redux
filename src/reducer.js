@@ -1,7 +1,8 @@
 import update from 'immutability-helper'
 
 const INITAL_STATE = {
-   toDos: [ ]
+   toDos: [ ],
+   completed: [ ]
 }
 
 const toDoApp = ( state = INITAL_STATE, action ) => {
@@ -10,6 +11,19 @@ const toDoApp = ( state = INITAL_STATE, action ) => {
       return update( state,
          {
             toDos: {
+               $push: [ action.toDo ]
+            }
+         })
+   }
+   case `toDoApp/COMPLETE_TO_DO`: {
+      console.log( action.toDo )
+
+      return update( state,
+         {
+            toDos: {
+               $splice: [ [ action.index, 1 ] ]
+            },
+            completed: {
                $push: [ action.toDo ]
             }
          })

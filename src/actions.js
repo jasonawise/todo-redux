@@ -6,3 +6,13 @@ export const addToDo = ( toDo ) => {
       toDo: toDo
    }
 }
+
+export const completeToDo = ( index, toDo ) => {
+   console.log( toDo )
+
+   return {
+      type: types.COMPLETE_TO_DO,
+      index: index,
+      toDo: toDo
+   }
+}

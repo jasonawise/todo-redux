@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { completeToDo } from './actions'
+import { connect } from 'react-redux'
 
-const Task = ({task}) => {
-   const handleComplete = ( e ) => {
-      console.log( e.target.id )
+const Task = ({task, handleCompleteToDo, index}) => {
+   const handleComplete = ( ) => {
+      handleCompleteToDo( index, task )
    }
 
    return (
@@ -25,4 +27,12 @@ Task.propTypes = {
    task: PropTypes.string.isRequired
 }
 
-export default Task
+const mapDispatchToProps = ( dispatch ) => {
+   return {
+      handleCompleteToDo: ( index, task ) => {
+         return dispatch( completeToDo( index, task ) )
+      }
+   }
+}
+
+export default connect( null, mapDispatchToProps )( Task )

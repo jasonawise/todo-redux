@@ -16,7 +16,7 @@ const TaskList = ({ tasks }) => {
          <ul>
             {tasks.map( task => {
                return (
-                  <Task task={task} key={task} />
+                  <Task task={task} key={tasks.indexOf( task )} index={tasks.indexOf( task )} />
                )
             })
             }
