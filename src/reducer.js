@@ -16,8 +16,6 @@ const toDoApp = ( state = INITAL_STATE, action ) => {
          })
    }
    case `toDoApp/COMPLETE_TO_DO`: {
-      console.log( action.toDo )
-
       return update( state,
          {
             toDos: {

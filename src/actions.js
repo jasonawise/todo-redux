@@ -8,8 +8,6 @@ export const addToDo = ( toDo ) => {
 }
 
 export const completeToDo = ( index, toDo ) => {
-   console.log( toDo )
-
    return {
       type: types.COMPLETE_TO_DO,
       index: index,
