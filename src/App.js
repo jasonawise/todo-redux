@@ -3,6 +3,8 @@ import { Provider } from 'react-redux'
 import AddToDo from './AddToDo'
 import configureStore from './store'
 import TaskList from './TaskList'
+import './tailwind.output.css'
+
 
 function App() {
    return (
