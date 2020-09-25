@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import Task from './Task'
 
 const TaskList = ({ tasks }) => {
    return (
@@ -8,15 +9,18 @@ const TaskList = ({ tasks }) => {
          <h2>{`Tasks`}</h2>
          {
             tasks.length === 0 &&
-           <p>{`No Tasks`}</p>
+            <ul>
+               <li>{`No Tasks Added Yet`}</li>
+            </ul>
          }
-         {
-            tasks.map( task => {
+         <ul>
+            {tasks.map( task => {
                return (
-                  <li>{task}</li>
+                  <Task task={task} key={task} />
                )
             })
-         }
+            }
+         </ul>
       </div>
    )
 }

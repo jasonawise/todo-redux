@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { addToDo } from './actions'
 
-const AddToDo = props => {
+const AddToDo = ({ addToDo }) => {
    const [ newToDo, setNewToDo ] = useState( `` )
 
    const handleChange = ( e ) => {
@@ -11,7 +11,11 @@ const AddToDo = props => {
    }
 
    const handleAddToDo = ( ) => {
-      props.addToDo( newToDo )
+      //  @todo need to add validation if error
+      if ( newToDo !== `` ) {
+         addToDo( newToDo )
+         setNewToDo( `` )
+      }
    }
 
    return (

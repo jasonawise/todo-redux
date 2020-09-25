@@ -7,7 +7,7 @@ import TaskList from './TaskList'
 function App() {
    return (
       <Provider store={configureStore()}>
-         <h1>{`Hello World`}</h1>
+         <h1>{`To Do Redux`}</h1>
          <AddToDo />
          <TaskList />
       </Provider>
