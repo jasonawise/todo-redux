@@ -22,7 +22,7 @@ const AddToDo = ({ addToDo }) => {
       <div className="flex flex-col container max-w-sm mx-auto">
          <label className="mb-3" htmlFor="toDo">{`TO DO`}</label>
          <input
-            className="rounded-md shadow-md mb-6 h-6 bg-gray-100"
+            className="rounded-md shadow-md mb-6 h-6 p-3 bg-gray-100"
             type="text"
             value={newToDo}
             onChange={handleChange}
