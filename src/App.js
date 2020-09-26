@@ -4,6 +4,7 @@ import AddToDo from './components/AddToDo'
 import configureStore from './store'
 import TaskList from './components/TaskList'
 import './tailwind.output.css'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <AddToDo />
             <TaskList />
          </div>
+         <Footer />
       </Provider>
    )
 }
