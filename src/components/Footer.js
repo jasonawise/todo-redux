@@ -11,6 +11,7 @@ const Footer = props => {
    return (
       <footer className="text-center p-6 mt-8 bg-orange-800 text-gray-100 absolute inset-x-0 bottom-0">
          <a
+            className="border-b"
             href=""
             onClick={handleClick}
          >
