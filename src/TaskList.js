@@ -9,11 +9,11 @@ const TaskList = ({ tasks }) => {
          <h2>{`Tasks`}</h2>
          {
             tasks.length === 0 &&
-            <ul>
+            <ul className="list-none">
                <li>{`No Tasks Added Yet`}</li>
             </ul>
          }
-         <ul>
+         <ul className="list-none">
             {tasks.map( task => {
                return (
                   <Task task={task} key={tasks.indexOf( task )} index={tasks.indexOf( task )} />

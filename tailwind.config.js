@@ -7,7 +7,11 @@ module.exports = {
       `public/**/*.html`
    ],
    theme: {
-      extend: {}
+      extend: {
+         fontFamily: {
+            'quicksand': [ `Quicksand`, `cursive` ]
+         }
+      }
    },
    variants: {},
    plugins: []

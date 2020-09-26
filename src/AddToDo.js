@@ -19,10 +19,20 @@ const AddToDo = ({ addToDo }) => {
    }
 
    return (
-      <div>
-         <label htmlFor="toDo">{`TO DO`}</label>
-         <input type="text" value={newToDo} onChange={handleChange} />
-         <button onClick={handleAddToDo}>{`add`}</button>
+      <div className="flex flex-col container max-w-sm mx-auto">
+         <label className="mb-3" htmlFor="toDo">{`TO DO`}</label>
+         <input
+            className="rounded-md shadow-md mb-6 h-6 bg-gray-100"
+            type="text"
+            value={newToDo}
+            onChange={handleChange}
+         />
+         <button
+            className="w-20 mx-auto shadow border-0 bg-orange-400 hover:bg-orange-600 hover:shadow-md rounded py-2 uppercase"
+            onClick={handleAddToDo}
+         >
+            {`add`}
+         </button>
       </div>
    )
 }

@@ -9,9 +9,11 @@ import './tailwind.output.css'
 function App() {
    return (
       <Provider store={configureStore()}>
-         <h1>{`To Do Redux`}</h1>
-         <AddToDo />
-         <TaskList />
+         <div className="px-8">
+            <h1>{`To Do Redux`}</h1>
+            <AddToDo />
+            <TaskList />
+         </div>
       </Provider>
    )
 }
