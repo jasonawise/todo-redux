@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { completeToDo } from './actions'
+import { completeToDo } from '../actions'
 import { connect } from 'react-redux'
 
 const Task = ({task, handleCompleteToDo, index}) => {

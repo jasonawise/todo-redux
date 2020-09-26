@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-import { addToDo } from './actions'
+import { addToDo } from '../actions'
 
 const AddToDo = ({ addToDo }) => {
    const [ newToDo, setNewToDo ] = useState( `` )

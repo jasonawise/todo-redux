@@ -1,8 +1,8 @@
 import React from 'react'
 import { Provider } from 'react-redux'
-import AddToDo from './AddToDo'
+import AddToDo from './components/AddToDo'
 import configureStore from './store'
-import TaskList from './TaskList'
+import TaskList from './components/TaskList'
 import './tailwind.output.css'
 
 
