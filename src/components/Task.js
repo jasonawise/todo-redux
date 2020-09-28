@@ -14,7 +14,7 @@ const Task = ({task, handleCompleteToDo, index}) => {
             {task}
          </li>
          <button
-            className="ml-4 rounded shadow bg-red-300 hover:bg-red-700 border-none p-1 w-20"
+            className="rounded shadow bg-red-300 hover:bg-red-700 border-none p-1 w-20"
             type="button"
             onClick={handleComplete}
             id={task}

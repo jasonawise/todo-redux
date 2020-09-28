@@ -5,7 +5,7 @@ import Task from './Task'
 
 const TaskList = ({ tasks }) => {
    return (
-      <div>
+      <div className="flex flex-col">
          <h2>{`Tasks`}</h2>
          {
             tasks.length === 0 &&
