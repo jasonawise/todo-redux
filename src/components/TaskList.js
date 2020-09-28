@@ -13,7 +13,7 @@ const TaskList = ({ tasks }) => {
                <li>{`No Tasks Added Yet`}</li>
             </ul>
          }
-         <ul className="list-none">
+         <ul className="list-none flex flex-row">
             {tasks.map( task => {
                return (
                   <Task task={task} key={tasks.indexOf( task )} index={tasks.indexOf( task )} />
